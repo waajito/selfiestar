@@ -1,21 +1,23 @@
 @font-face {
     font-family: 'Avenir LT Std';
-    src: url('./fonts/Avenir-Book.ttf'),;
+    src: url('./fonts/Avenir-Book.ttf') format('truetype');
     /* font-weight: normal;
     font-style: normal; */
 }
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Avenir LT Std';
+    font-family: 'Avenir LT Std', sans-serif;
 
 }
 
 body {
     background-color: #202020;
-    font-family: 'AvenirLTStd';
+    font-family: 'Avenir LT Std', sans-serif;
     color: white;
     display: flex;
     justify-content: center;
@@ -59,7 +61,7 @@ letter-spacing: 0.4px;
 }
 
 .icons {
-    margin: 6rem 0;
+    margin: 5rem 0 -3rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
@@ -71,12 +73,31 @@ letter-spacing: 0.4px;
     font-size: 18px;
     letter-spacing: .5px;
 }
+
+.display img {
+    height: 150px;
+}
 .display p {
     margin-top: 1rem;
     font-weight: 500;
 text-transform: uppercase;
 }
 
+.display a {
+    color: white;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.display a:visited {
+    color: white;
+
+}
+
+.display a:hover {
+    /* background-color: rgba(244, 179, 62, 0.8); */
+    color: #D54F8B;
+}
 .subsection {
     border: 1px solid #474747;
     padding: 0rem 6rem;
@@ -85,9 +106,11 @@ text-transform: uppercase;
     align-items: center;
 }
 
+
+
 .subsection a {
-    background-color: #F26FD7;
-    background-image: linear-gradient(103.9deg, #F26FD7 40.08%, #37C9F8 77.95%);
+    background-color: rgba(244, 179, 62, 0.8);
+    background-image: linear-gradient(161.57deg, rgba(244, 179, 62, 0.8) 11.99%, rgba(223, 84, 136, 0.8) 87.5%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -97,7 +120,9 @@ text-transform: uppercase;
     font-size: 20px;
    font-weight: bold;
    }
-
+   .subsection a:hover {
+    text-decoration: underline;
+}
    .right {
        width: 200px;
        text-align: right;
@@ -133,20 +158,30 @@ footer p {
 
     .container {
        width: 80%;
-        margin: 0 4rem;
+        margin: 0;
     }
 
     .subsection {
         margin: 0;
+        
         margin-bottom: 3rem;
         flex-direction: column;
         padding: 1rem;
+        padding-bottom: 2.5rem;
     }
 
     .subsection .right {
         text-align: center;
         width: 100%;
 
+    }
+
+    .icons {
+        /* margin: 6rem 0;
+        display: grid; */
+        grid-template-columns: 1fr;
+      
+        grid-template-rows: repeat(2,16rem);
     }
 
     footer {
