@@ -1,10 +1,9 @@
 @font-face {
     font-family: 'Avenir LT Std';
-    src: url('./fonts/Avenir-Book.ttf'),;
+    src: url('./fonts/Avenir-Book.ttf') format('truetype');
     /* font-weight: normal;
     font-style: normal; */
 }
-
 
 * {
     padding: 0;
@@ -13,9 +12,8 @@
 }
 
 body {
-    background:  url("./bg.jpg") rgb(148, 111, 148) no-repeat  center;
+    background:   url("./bg.jpg") rgb(148, 111, 148) no-repeat  center;
     background-blend-mode: multiply;
-    
     background-size: cover;
     color: aliceblue;
     font-family: 'Quicksand', sans-serif;
@@ -77,7 +75,7 @@ h3 {
 }
 
 h5 {
-    margin-top: 10rem;
+    margin: 5vh;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 20px;

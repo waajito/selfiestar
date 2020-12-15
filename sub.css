@@ -104,6 +104,7 @@ text-transform: uppercase;
     margin: 4rem 10rem;
     display: flex;
     align-items: center;
+
 }
 
 
@@ -124,9 +125,11 @@ text-transform: uppercase;
     text-decoration: underline;
 }
    .right {
-       width: 200px;
+       width: 400px;
        text-align: right;
    }
+
+  
 
    .left {
     color: #DEDEDE;
@@ -148,6 +151,7 @@ footer {
 }
 
 footer p {
+    margin: 2rem;
     font-size: 16px;
     color: #DEDEDE;
 
@@ -163,7 +167,6 @@ footer p {
 
     .subsection {
         margin: 0;
-        
         margin-bottom: 3rem;
         flex-direction: column;
         padding: 1rem;
@@ -177,8 +180,7 @@ footer p {
     }
 
     .icons {
-        /* margin: 6rem 0;
-        display: grid; */
+        margin: 0;
         grid-template-columns: 1fr;
       
         grid-template-rows: repeat(2,16rem);
@@ -187,5 +189,6 @@ footer p {
     footer {
         flex-direction: column;
         gap: 1px;
+        text-align: center;
     }
 }
