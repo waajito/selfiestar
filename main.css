@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('./fonts/AvenirLTStd-Book.otf'),;
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +13,9 @@
 }
 
 body {
-    background: purple url("./bg.jpg") no-repeat  center;
+    background:  url("./bg.jpg") rgb(148, 111, 148) no-repeat  center;
+    background-blend-mode: multiply;
+    
     background-size: cover;
     color: aliceblue;
     font-family: 'Quicksand', sans-serif;
@@ -13,6 +23,30 @@ body {
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
+}
+
+#investors{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    border: 0.5px solid #FFFFFF;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    padding: .8rem 1.5rem;
+    font-family: 'Avenir LT Std';
+    text-transform: uppercase;
+    transition: color .3s;
+    transition: background-color .3s;
+    transition: transform .3s;
+
+}
+
+#investors:hover {
+    background-color: white;
+    color: #202020;
+    transform: scale(1.05);
 }
 
 .main {
@@ -80,12 +114,18 @@ a:visited {
     color: white;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 640px) { 
 
+    #investors {
+        position: static;
+        margin: 1rem;
+    }
 
- 
+    img {
+        margin: 1rem;
+    }
     h1 {
-        font-size: 4rem ;
+        font-size: 3.5rem ;
         text-align: center;
     }
 
@@ -94,8 +134,8 @@ a:visited {
     }
 
     h5 {
-        margin: 30% 0;
-        
+        margin: 20% 0;
+        margin-top: 4rem;
         font-size: 1.8rem;
         letter-spacing: 10px;
     }
